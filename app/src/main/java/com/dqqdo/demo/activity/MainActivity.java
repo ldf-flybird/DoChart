@@ -18,6 +18,8 @@ public class MainActivity extends AppCompatActivity {
     Button mBtnPieTest;
     @Bind(R.id.btn_bar_test)
     Button mBtnBarTest;
+    @Bind(R.id.btn_line_test)
+    Button mBtnLineTest;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,21 +28,30 @@ public class MainActivity extends AppCompatActivity {
         ButterKnife.bind(this);
     }
 
-    @OnClick({R.id.btn_pie_test, R.id.btn_bar_test})
+    @OnClick({R.id.btn_pie_test, R.id.btn_bar_test,R.id.btn_line_test})
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.btn_pie_test:
 
-                Intent pieIntent = new Intent(MainActivity.this,PieChartActivity.class);
+                Intent pieIntent = new Intent(MainActivity.this, PieChartActivity.class);
                 startActivity(pieIntent);
 
                 break;
             case R.id.btn_bar_test:
 
-                Intent barIntent = new Intent(MainActivity.this,BarChartActivity.class);
+                Intent barIntent = new Intent(MainActivity.this, BarChartActivity.class);
                 startActivity(barIntent);
+
+                break;
+
+            case R.id.btn_line_test:
+
+                Intent lineIntent = new Intent(MainActivity.this, LineChartActivity.class);
+                startActivity(lineIntent);
 
                 break;
         }
     }
+
+
 }

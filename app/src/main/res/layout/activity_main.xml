@@ -24,5 +24,12 @@
         android:id="@+id/btn_bar_test"
         />
 
+    <Button
+        android:text="曲线图图-检测结果"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_line_test"
+        />
+
 
 </LinearLayout>

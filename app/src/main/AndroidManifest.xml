@@ -22,6 +22,9 @@
         <activity android:name="com.dqqdo.demo.activity.BarChartActivity">
         </activity>
 
+        <activity android:name="com.dqqdo.demo.activity.LineChartActivity">
+        </activity>
+
     </application>
 
 </manifest>
